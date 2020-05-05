@@ -2,7 +2,7 @@
 
 DEST="/var/www/html/cs"
 
-list=`git status -s | sed "s/^MM* *//" | grep '\.css\|\.html\|.js'`
+list=`git status -s |  grep '\.css$\|\.html$\|.js$' | sed "s/^ *M* *//"`
 
 for i in $list
 do

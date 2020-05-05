@@ -20,6 +20,14 @@ h6 {
   @include heading-font;
 }
 
+a {
+  color: white;
+  text-decoration: underline;
+}
+a:hover {
+  color: $secondary;
+}
+
 video {
   position: fixed;
   top: 50%;
